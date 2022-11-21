@@ -1,24 +1,32 @@
-import React from 'react';
+import React from "react";
 
-function Navbar({ currentPage, handlePageChange }) {
-    return (
+function Navbar({ currentPage, setCurrentPage }) {
+  const pages = ["About", "Portfolio", "Contact", "Resume"];
+  return (
+    <div className="tabs is-centered">
+      <ul className="nav nav-tabs">
+        {pages.map((page) => (
+          <li
+            className={
+              currentPage === page ? "nav-item is-active" : "nav-item"
+            }
+            key={page}
+          >
+            <a
+              href={"#" + page.toLowerCase()}
 
-        <ul class="nav nav-pills">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-        </li>
-        </ul>
-
-
-)};
+              onClick={() => setCurrentPage(page)}
+              className={
+                currentPage === page ? "nav-link active" : "nav-link"
+              }
+            >
+              {page}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 export default Navbar;

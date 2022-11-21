@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import './App.css';
 
 function App() {
+   
   const [currentPage, setCurrentPage] = useState("About");
 
   const renderPage = () => {
@@ -26,10 +27,16 @@ function App() {
   };  
   
   return (
-    <div className="App">
+    <div>
+      
       <Header currentPage={currentPage} setCurrentPage={setCurrentPage} ></Header>
-      <main>{renderPage(currentPage)}</main>
+      
+      <main>
+        <div> {renderPage(currentPage)} </div>
+      </main>
+      
       <Footer></Footer>
+    
     </div>
   );
 }

@@ -15,11 +15,42 @@ code {
 
 .form {
   margin: 20px;
+  padding-right: 10%;
 }
 
-.form input {
+.form input, 
+.form textarea {
   display: block;
   margin-top: 5px;
-  margin-bottom: 5px;
-  width: 100%;
+  margin-bottom: 15px;
+  width: 50%;
+  border: 1px solid #024e76;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+
+.form button:hover {
+  color: #F2E3D5;
+  background: #2996a2;
+}
+
+.form input:focus,
+.form textarea:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+.form button {
+  width: 20%;
+  border: none;
+  background: #F2E3D5;
+  color: #024e76;
+  text-align: center;
+  padding: px 0;
+  font-size: 25px;
+  border-radius: 10px;
 }

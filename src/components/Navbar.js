@@ -3,8 +3,8 @@ import React from "react";
 function Navbar({ currentPage, setCurrentPage }) {
   const pages = ["About", "Portfolio", "Contact", "Resume"];
   return (
-    <div className="tabs is-centered">
-      <ul className="nav nav-tabs">
+    <div >
+      <ul className="flex-row">
         {pages.map((page) => (
           <li
             className={

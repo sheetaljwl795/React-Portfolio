@@ -7,10 +7,8 @@ import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 
-function App() {
-   
+function App() {   
   const [currentPage, setCurrentPage] = useState("About");
-
   const renderPage = () => {
       switch (currentPage) {
           case "About":
@@ -27,15 +25,12 @@ function App() {
   };  
   
   return (
-    <div>
-      
-      <Header currentPage={currentPage} setCurrentPage={setCurrentPage} ></Header>
-      
+    <div>      
+      <Header currentPage={currentPage} setCurrentPage={setCurrentPage} ></Header>      
       <main>
         <div> {renderPage(currentPage)} </div>
-      </main>
-      
-      <Footer></Footer>
+      </main>      
+      <Footer/>
     
     </div>
   );

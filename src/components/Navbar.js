@@ -4,7 +4,7 @@ function Navbar({ currentPage, setCurrentPage }) {
   const pages = ["About", "Portfolio", "Contact", "Resume"];
   return (
     <div >
-      <ul className="flex-row">
+      <ul className="flex-row" >
         {pages.map((page) => (
           <li
             className={

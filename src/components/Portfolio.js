@@ -6,41 +6,47 @@ function Portfolio() {
   // Replace links with deployed projects and GitHub repos
   const [projects] = useState([
    
-        {
+    {
       name: 'Dream-job-Finder',
       description: 'Job Finder website with HTML, CSS, API routes, web services',
       link: "https://github.com/sheetaljwl795/dream-job-finder",
-      repo: "https://github.com/sheetaljwl795/dream-job-finder"
+      repo: "https://github.com/sheetaljwl795/dream-job-finder",
+      img: require("../assets/projects/Dream-job-Finder.jpg")
     },
     {
       name: 'mysql-employee-tracker',
       description: 'Business owner can view and manage the departments, roles, and employees in his company so that he can organize and plan my business.',
       link: "https://github.com/sheetaljwl795/mysql-employee-tracker",
-      repo: "https://github.com/sheetaljwl795/mysql-employee-tracker"
+      repo: "https://github.com/sheetaljwl795/mysql-employee-tracker",
+      img: require("../assets/projects/mysql-employee-tracker.jpg")
     },
     {
       name: 'note-taker',
       description: 'Note Taker that can be used to write and save notes. This application uses an Express.js back end and will save and retrieve note data from a JSON file.',
       link: "https://github.com/sheetaljwl795/note-taker",
-      repo: "https://github.com/sheetaljwl795/note-taker"
+      repo: "https://github.com/sheetaljwl795/note-taker",
+      img: require("../assets/projects/note-taker.jpg")
     },
     {
       name: 'work-day-scheduler',
       description: 'AN employee with a busy schedule I WANT to add important events to a daily planner SO THAT I can manage my time effectively',
       link: "https://github.com/sheetaljwl795/module5-challenge",
-      repo: "https://github.com/sheetaljwl795/module5-challenge"
+      repo: "https://github.com/sheetaljwl795/module5-challenge",
+      img: require("../assets/projects/work-day-scheduler.jpg")
     },
     {
       name: 'weather-dashboard',
       description: 'AS A traveler I WANT to see the weather outlook for multiple cities SO THAT I can plan a trip accordingly GIVEN a weather dashboard with form inputs WHEN I search for a city THEN I am presented with current and future conditions for that city and that city is added to the search history ',
       link: "https://github.com/sheetaljwl795/module6-weather",
-      repo: "https://github.com/sheetaljwl795/module6-weather"
+      repo: "https://github.com/sheetaljwl795/module6-weather",
+      img: require("../assets/projects/weather-dashboard.jpg")
     },
     {
       name: 'brighteducation',
       description: 'With BrightEducation, you can enroll your child into any class where they may need to brush up on some skills or want to be challenged at a higher level. With our professionally certified teaching staff, we guarantee to enrich your child education no matter the cause.',
       link: "https://github.com/jleebootcamp/brighteducation",
-      repo: "https://github.com/jleebootcamp/brighteducation"
+      repo: "https://github.com/jleebootcamp/brighteducation",
+      img: require("../assets/projects/brighteducation.jpg")
     },
   ]);
 

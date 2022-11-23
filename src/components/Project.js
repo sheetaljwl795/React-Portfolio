@@ -1,9 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fab } from '@fortawesome/free-brands-svg-icons'
-  import { faCheckSquare, fa } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
-//import img from "../assets/projects/Dream-job-Finder.jpg";
 
 import { removeHyphensAndCapitalize } from '../utils/helper';
 
@@ -17,7 +15,6 @@ function Project({ project }) {
   return (
     <div className="project" key={name}>
       <img
-        // src={require(`../assets/projects/${name}.jpg`).default}
         src={img}
         alt={removeHyphensAndCapitalize(name)}
         className="project-bg"
@@ -25,9 +22,8 @@ function Project({ project }) {
       <div className="project-text">
         <h3>
           <a href={link}>{removeHyphensAndCapitalize(name)}</a>{' '}
-          { <a href={repo}>
-            {/* <i className="fab fa-github"></i> */}
-            <FontAwesomeIcon icon={["fab", "github"]} />
+          { <a href={repo}>            
+          <FontAwesomeIcon icon={faGithub} />
           </a> }
           
         </h3>

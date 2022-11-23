@@ -2,9 +2,9 @@ import React from 'react';
 
 function Resume() {
   return (
-    <section className="my-5">
+    <section className="my-3">
       <div className="my-2">
-      <p>
+        <p>
         Download my <a href="https://www.linkedin.com/in/sheetaljawale/">resume</a>
         </p>
         <h3>Front-end Proficiencies</h3>
@@ -15,11 +15,13 @@ function Resume() {
           <li>jQuery</li>
           <li>Responsive design</li>
           <li>React</li>
+          <li>Progressive Web Applications (PWA)</li>
           <li>Bootstrap</li>
         </ul>
         <h3>Back-end Proficiencies</h3>
         <ul className="skills">
           <li>APIs</li>
+          <li>MERN</li>
           <li>Node</li>
           <li>Express</li>
           <li>MySQL, Sequelize</li>

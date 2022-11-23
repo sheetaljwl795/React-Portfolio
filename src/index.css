@@ -104,7 +104,7 @@ body {
   font-size: 18px;
   letter-spacing: 0.1em;
   background: var(--darker);
-  color: var(--light);
+  color: var(--darker);
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -370,10 +370,10 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
-.card {
+/* .card {
   width: 25%;
   text-align: center;
-}
+} */
 
 .project {
   position: relative;

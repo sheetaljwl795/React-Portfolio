@@ -2,7 +2,10 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/sheetaljwl795/react-portfolio/",
+  "homepage": "https://whispering-sands-69505.herokuapp.com/",
+  "engines": {
+    "node": "16.17.0"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
